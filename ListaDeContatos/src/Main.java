@@ -10,7 +10,7 @@ public class Main {
 	public static void main(String[] args) {
 
 		Contatos l = new Contatos();
-		String menu = "Menu de Opções criando Nota fiscal\n1 - Adicionar contato\n2- Remover contato\n3 - Ver lista de contatos ";
+		String menu = "Menu de Opções Lista de contatos\n1 - Adicionar contato\n2- Remover contato\n3 - Ver lista de contatos ";
 		int op = 0;
 		String telefone, nome, cel, end, remove;
 		while (op != 99) {
@@ -21,7 +21,7 @@ public class Main {
 				telefone = JOptionPane.showInputDialog("Digite o telefone fixo: ");
 				cel = JOptionPane.showInputDialog("Digite o celular: ");
 				end = JOptionPane.showInputDialog("Digite o seu endereço: ");
-				l.adiciona(nome, telefone, cel, end);
+				l.adiciona(new Contato(nome, telefone, cel, end));
 				JOptionPane.showMessageDialog(null, l.toString());
 				System.out.println(l.toString());
 				break;
