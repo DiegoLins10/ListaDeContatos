@@ -60,7 +60,7 @@ public class Contatos {
 							p = aux1.dado;
 							aux2.prox = aux1.prox;
 						} else {
-							System.out.println("Produto nao encontrado");
+							System.out.println("Contato nao encontrado");
 						}
 					}
 				}

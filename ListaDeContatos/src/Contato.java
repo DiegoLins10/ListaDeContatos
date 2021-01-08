@@ -46,6 +46,6 @@ public class Contato {
 	}
 
 	public String toString() {
-		return nome + " " + cel + " " + tel + " " + end;
+		return "\nNome: " + nome + "\n-Telefone Celular: " + cel + "\n-Telefone Fixo: " + tel + "\n-Endereço: " + end;
 	}
 }
